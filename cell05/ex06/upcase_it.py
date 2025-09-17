@@ -1,5 +1,9 @@
-word = input()
-if len(word) == 0:
-    print("none")
+#!/usr/bin/env python3
+import sys
+
+args = sys.argv[1:]   
+
+if len(args) == 1:
+    print(args[0].upper())  
 else:
-    print(word.upper())
+    print("none")
